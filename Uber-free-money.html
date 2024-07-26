@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Uber request a-ride form
+        </title>
+        <style>
+            .request {
+                font-size:x-large;
+                color: rgb(11, 8, 8);
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-weight:600;
+                display: block;
+                margin-bottom: 15px;
+            }
+            .pickup {
+                background-color:rgb(228, 228, 228);
+                border: none;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 10px;
+                padding-right: 50px;
+                font-size:11px;
+                color: lightslategray;
+                width: 200px;
+                border-radius: 10px;
+                display: block;
+                transition: box-shadow 0.2s;
+            }
+            .pickup:hover {
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3);
+}           .destiny {
+    background-color:rgb(228, 228, 228);
+                border: none;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 10px;
+                padding-right: 50px;
+                font-size:11px;
+                color: lightslategray;
+                width: 200px;
+                border-radius: 10px;
+                display: block;
+                transition: box-shadow 0.2s;
+                margin-top: 5px;
+}
+.request-button {
+    color: white;
+    background-color: black;
+    height: 33px;
+    width: 115px;
+    cursor: pointer;
+    transition: opacity 0.15s;
+    border: none;
+    margin-top: 25px;
+    margin-left: 0px;
+    margin-right: 10px;
+}
+.request-button:hover {
+    opacity: 0.7;
+}
+.request-button:active {
+    opacity: 0.5;
+}
+.later {
+    background-color:rgb(228, 228, 228);
+    border: none;
+    height: 33px;
+    color: black;
+    font-size: x-small;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+body {
+    background-image: url(uber.png);
+    background-position:unset;
+    background-size: 1500px;
+    padding-left: 20px;
+}
+.exam {
+    display: inline-block;
+    margin-left: 600px;
+    margin-top: 100px;
+
+
+
+}
+        </style>
+    </head>
+    <body>
+        <div class="exam">
+            <p class="request">
+                Request a ride now
+            </p>
+            <input class="pickup" type="text" placeholder="Enter pickup location">
+            <input class="destiny" type="text" placeholder="Enter destination">
+            <button class="request-button" onclick="window.open('https://www.uber.com/in/en/'), '_blank'">
+                Request now
+            </button>
+            <button class="later">
+                Schedule for Later
+            </button>
+        </div>
+    </body>
+</html>
